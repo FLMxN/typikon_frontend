@@ -1,4 +1,13 @@
+import PageLayout from './PageLayout';
+
 function Repository() {
-  return <div>Repository Page Content</div>;
+  return (
+    <PageLayout>
+      <main className="app-main">
+        <div>Repository Page Content</div>
+      </main>
+    </PageLayout>
+  );
 }
+
 export default Repository;

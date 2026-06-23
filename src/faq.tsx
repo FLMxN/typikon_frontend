@@ -1,4 +1,13 @@
+import PageLayout from './PageLayout';
+
 function FAQ() {
-  return <div>FAQ Page Content</div>;
+  return (
+    <PageLayout>
+      <main className="app-main">
+        <div>FAQ Page Content</div>
+      </main>
+    </PageLayout>
+  );
 }
+
 export default FAQ;

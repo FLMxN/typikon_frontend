@@ -1,4 +1,13 @@
+import PageLayout from './PageLayout';
+
 function Profile() {
-  return <div>Profile Page Content</div>;
+  return (
+    <PageLayout>
+      <main className="app-main">
+        <div>Profile Page Content</div>
+      </main>
+    </PageLayout>
+  );
 }
+
 export default Profile;
