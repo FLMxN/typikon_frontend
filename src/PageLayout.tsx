@@ -12,18 +12,18 @@ function PageLayout({ children }: PageLayoutProps) {
   return (
     <>
       <header className="app-header">
-        <div className="header-logo" onClick={() => navigate('/')}>
+        <div className="header-logo" onClick={() => navigate('/', { viewTransition: true })}>
           <img src="/favicon.png" alt="typikon logo" className="logo-image" />
         </div>
 
         <nav className="header-nav">
-          <button className="nav-btn" aria-label="Repository" onClick={() => navigate('/repository')}>repo</button>
-          <button className="nav-btn" aria-label="Spaces" onClick={() => navigate('/spaces')}>spaces</button>
-          <button className="nav-btn" aria-label="FAQ" onClick={() => navigate('/faq')}>faq</button>
+          <button className="nav-btn" aria-label="Repository" onClick={() => navigate('/repository', { viewTransition: true })}>repo</button>
+          <button className="nav-btn" aria-label="Spaces" onClick={() => navigate('/spaces', { viewTransition: true })}>spaces</button>
+          <button className="nav-btn" aria-label="FAQ" onClick={() => navigate('/faq', { viewTransition: true })}>faq</button>
         </nav>
 
-        <a href="/profile" className="profile-link">
-          <div className="avatar-placeholder">👤</div>
+        <a className="profile-link">
+          <div className="avatar-placeholder" onClick={() => navigate('/profile', { viewTransition: true })}>👤</div>
         </a>
       </header>
 
