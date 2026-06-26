@@ -1,5 +1,6 @@
 import { useNavigate, Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
+import DecryptedText from './decrypt';
 
 const dashboardItems = [
   {
@@ -35,7 +36,15 @@ function Home() {
 
           <section className="dashboard-intro" aria-labelledby="home-title">
             <p className="eyebrow">typikon by enneai</p>
-            <h1 id="home-title">map the person, not just letters</h1>
+            {/* <h1 id="home-title">map the person, not just letters</h1> */}
+            <h1>
+              <DecryptedText text='map the character, not just traits'
+              revealDirection='start'
+              sequential
+              useOriginalCharsOnly={false}
+              animateOn="view"
+              />
+            </h1>
             <p>
               AI-powered forum for learning typology, community reasoning and
               everyday chatting.
